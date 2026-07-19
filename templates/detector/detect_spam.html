@@ -1,0 +1,77 @@
+{% extends 'detector/base.html' %}
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-lg p-4">
+                <h3 class="text-center text-primary mb-4">
+                    Single Email Detection
+                </h3>
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="single">
+                    <div class="mb-3">
+                        <label>Email Subject</label>
+                        <input
+                            type="text"
+                            name="subject"
+                            class="form-control"
+                            placeholder="Enter Email Subject"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Email Message</label>
+                        <textarea
+                            name="message"
+                            rows="8"
+                            class="form-control"
+                            placeholder="Paste Email Content"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        Check Spam
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-lg p-4">
+                <h3 class="text-center text-success mb-4">
+                    Batch Upload
+                </h3>
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="batch">
+                    <div class="mb-3">
+                        <label>Select Text File (.txt)</label>
+                        <input
+                            type="file"
+                            name="email_file"
+                            class="form-control"
+                            accept=".txt"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">
+                        Upload & Check
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if result %}
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            {% if result == "Spam Email Detected!" %}
+            <div class="alert alert-danger text-center">
+                <h4>{{ result }}</h4>
+            </div>
+            {% else %}
+            <div class="alert alert-success text-center">
+                <h4>{{ result }}</h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

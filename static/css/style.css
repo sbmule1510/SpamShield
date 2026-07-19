@@ -1,0 +1,163 @@
+html,
+body,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+body{
+    background: linear-gradient(135deg, #eef6ff, #f8fbff, #e8f7ff);
+    min-height: 100vh;
+}
+
+.navbar{
+    background: linear-gradient(to right, #2193b0, #6dd5ed) !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar .btn{
+    font-size: 18px;
+}
+
+.card{
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.btn{
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.btn-primary{
+    background-color: #2193b0;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #1a7f98;
+}
+
+.btn-warning{
+    color: white;
+}
+
+.display-4{
+    color: #0b4f6c;
+    font-weight: bold;
+}
+
+.lead{
+    color: #444;
+    font-size: 22px;
+}
+
+.text-muted{
+    color: #666 !important;
+}
+
+.about-card{
+    border: none;
+    border-radius: 20px;
+    background: white;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.about-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.about-card .icon{
+    font-size: 55px;
+}
+
+.about-card h4{
+    color: #0b4f6c;
+    font-weight: bold;
+}
+
+.about-card p{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.register-card{
+    border: none;
+    border-radius: 20px;
+    background: white;
+}
+
+.form-control{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 8px rgba(33,147,176,0.3);
+    border-color: #2193b0;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard-card{
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.dashboard-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h1{
+    font-size: 55px;
+}
+
+.dashboard-card h4{
+    color: #0b4f6c;
+    font-weight: bold;
+}
+
+.table{
+    background: white;
+}
+
+.table th{
+    text-align: center;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
+.alert{
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+footer{
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+}

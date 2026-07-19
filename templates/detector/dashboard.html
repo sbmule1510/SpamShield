@@ -1,0 +1,40 @@
+{% extends 'detector/base.html' %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center text-primary mb-5">
+        User Dashboard
+    </h1>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card dashboard-card text-center p-4">
+                <h1>📧</h1>
+                <h4>Detect Spam</h4>
+                <p>Check whether an email is spam or safe.</p>
+                <a href="/detect/" class="btn btn-primary">
+                    Open
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card dashboard-card text-center p-4">
+                <h1>📜</h1>
+                <h4>History</h4>
+                <p>View your previous detection results.</p>
+                <a href="/history/" class="btn btn-primary">
+                    Open
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card dashboard-card text-center p-4">
+                <h1>👤</h1>
+                <h4>Profile</h4>
+                <p>View your account details.</p>
+                <a href="/profile/" class="btn btn-primary">
+                    Open
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
