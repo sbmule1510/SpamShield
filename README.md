@@ -56,41 +56,24 @@ SpamShield is a web-based Email Spam Detection System developed using Django and
 - Visual Studio Code
 - Git (Optional)
 
-## How to Run the Project
-### Step 1
-Download or clone the project from GitHub.
-### Step 2
-Open the project in Visual Studio Code.
+## How I Run the Project 
+### Step 1 
+I created the SpamShield project in Visual Studio Code. 
+### Step 2 
+I created and activated the virtual environment. 
 ### Step 3
-Create and activate the virtual environment.
-### Step 4
-Install the required packages.
-### Step 5
-Start MongoDB Server.
-### Step 6
-Run the Django server.
-### Step 7
-Open the application in your browser.
-Example:
-http://127.0.0.1:8000/
-### Step 8
-Register a new account.
-### Step 9
-Login using your credentials.
+I installed Django, PyMongo, and Django REST Framework. 
+### Step 4 
+I started the MongoDB server. 
+### Step 5 
+I created the spamshield database with users and history collections. 
+### Step 6 
+I developed the project features such as registration, login, spam detection, batch upload, history, statistics, and API. 
+### Step 7 
+I configured all URL routes. 
+### Step 8 
+I ran the project using: python manage.py runserver 
+### Step 9 
+I opened the application in the browser: http://127.0.0.1:8000/ 
 ### Step 10
-Enter the Email Subject and Message or upload a `.txt` file.
-### Step 11
-Click **Check Spam** to classify the email.
-### Step 12
-View Detection History, Statistics, or Delete History as required.
-
-## Database
-MongoDB is used to store:
-
-- User Information
-- Email Detection History
-
-### Collections
-
-- users
-- history
+I registered a user, logged in, and tested all project features.
